@@ -3,5 +3,9 @@ A small python module to build menus using JSON style schema
 
 Example Menu:
 ```
-test
+import menuAPI
+
+menu = {
+  te
+}
 ```
