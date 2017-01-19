@@ -6,6 +6,30 @@ Example Menu:
 import menuAPI
 
 menu = {
-  te
+  'type': 'menu',
+  'title': 'Example Menu',
+  'items': (
+    {
+      'type': 'menu',
+      'title': 'Example Sub-Menu',
+      'items': (
+                 {
+                  'type': 'button',
+                  'title': 'Say Hi',
+                  'callback': lambda:exec('print(\'Hello, World\');time.sleep(3)')
+                 },
+                 {
+                  'type': 'button',
+                  'title': 'Go Back',
+                  'breaking': True
+                 }
+              )
+            },
+            {
+              'type': 'button',
+              'title': 'Exit',
+              'breaking': True
+            }
+      )
 }
 ```
