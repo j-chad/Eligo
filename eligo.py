@@ -11,9 +11,12 @@ def clear():
         os.system('clear')
 
 class menu:
-    def __init__(self, title, items=[], callback=None, **kwargs):
+    def __init__(self, title, items=None, callback=None, **kwargs):
         self.title = title
-        self.items = items
+        if items is None:
+            self.items = []
+        else:
+            self.items = items
         self.callback = callback
         self.kwargs = kwargs
         if 'callback_type' in kwargs:
