@@ -3,7 +3,7 @@ A small python module to build menus using JSON style schema
 
 Example Menu:
 ```python
-import menuAPI
+import eligo
 
 menu = {
   'type': 'menu',
@@ -32,4 +32,6 @@ menu = {
             }
       )
 }
+
+eligo.construct(menu).display()
 ```
